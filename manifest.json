@@ -1,0 +1,25 @@
+{
+  "id": "remnote-habitica-integration",
+  "name": "HabiticaXP",
+  "description": "Connect your RemNote flashcard activity with Habitica, earning XP for reviewing and creating flashcards",
+  "author": "DivusGeorgius",
+  "version": "0.1.0",
+  "enableOnMobile": true,
+  "manifestVersion": 2,
+  "minAppVersion": "1.8.0",
+  "repoUrl": "https://github.com/OGBrown26/HabiticaXP",
+  "requestNative": false,
+  "requiredScopes": [
+    {
+      "type": "All",
+      "level": "Read"
+    },
+    {
+      "type": "Flashcard",
+      "level": "ReadWrite"
+    }
+  ],
+  "permissions": [
+    "internet"
+  ]
+}
