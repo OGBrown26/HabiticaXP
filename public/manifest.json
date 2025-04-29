@@ -1,17 +1,21 @@
 {
-  "manifestVersion": 1,
-  "id": "plugin_template",
-  "name": "Plugin Template",
-  "author": "remnote",
-  "repoUrl": "",
+  "id": "remnote-habitica-integration",
+  "name": "HabiticaXP",
+  "description": "Connect your RemNote flashcard activity with Habitica, earning XP for reviewing and creating flashcards",
+  "author": "DivusGeorgius",
   "version": {
     "major": 0,
-    "minor": 0,
-    "patch": 1
+    "minor": 1,
+    "patch": 0
   },
-  "theme": [],
-  "enableOnMobile": false,
-  "description": "",
+  "enableOnMobile": true,
+  "manifestVersion": 1,
+  "minimumRemNoteVersion": {
+    "major": 1,
+    "minor": 8,
+    "patch": 18
+  },
+  "repoUrl": "https://github.com/OGBrown26/HabiticaXP",
   "requestNative": false,
   "requiredScopes": [
     {
