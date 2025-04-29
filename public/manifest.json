@@ -16,7 +16,7 @@
     "patch": 18
   },
   "repoUrl": "https://github.com/OGBrown26/HabiticaXP",
-  "requestNative": true,
+  "requestNative": false,
   "requiredScopes": [
     {
       "type": "All",
