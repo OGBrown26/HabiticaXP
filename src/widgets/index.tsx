@@ -527,13 +527,11 @@ plugin.event.addListener(AppEvents.GlobalRemChanged, undefined, async (blah) => 
   });
 
   // Add event listener for the sync button
-  if (typeof window !== 'undefined') {
-    const syncButton = document.getElementById('habitica-sync-button');
-    if (syncButton) {
-      syncButton.addEventListener('click', () => {
-        plugin.app.dispatchEvent('habitica-sync');
-      });
-    }
+  const syncButton = document.getElementById('habitica-sync-button');
+  if (syncButton) {
+    syncButton.addEventListener('click', () => {
+      await plugin.messaging.broadcast({anyDataGoesHere: 'awesome!'});
+    });
   }
 
   // CSS styles for the plugin
