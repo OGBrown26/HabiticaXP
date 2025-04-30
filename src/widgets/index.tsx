@@ -529,7 +529,7 @@ plugin.event.addListener(AppEvents.GlobalRemChanged, undefined, async (blah) => 
   // Add event listener for the sync button
   const syncButton = document.getElementById('habitica-sync-button');
   if (syncButton) {
-    syncButton.addEventListener('click', () => {
+    syncButton.addEventListener('click', async () => {
       await plugin.messaging.broadcast({anyDataGoesHere: 'awesome!'});
     });
   }
